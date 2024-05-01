@@ -17,8 +17,9 @@ import slimeknights.tconstruct.library.tools.helper.ToolDamageUtil;
 import slimeknights.tconstruct.library.tools.item.ModifiableItem;
 import slimeknights.tconstruct.library.tools.nbt.ToolStack;
 
+import survivalistessentials.util.Chat;
+
 import tinkersurvival.TinkerSurvival;
-import tinkersurvival.util.Chat;
 
 public class TicToolBase extends ModifiableItem {
 
@@ -28,7 +29,7 @@ public class TicToolBase extends ModifiableItem {
 
     @Nonnull
     @Override
-    public ItemStack getContainerItem(@Nonnull ItemStack stack) {
+    public ItemStack getCraftingRemainingItem(@Nonnull ItemStack stack) {
         ItemStack container = stack.copy();
         ToolStack tool = ToolStack.from(container);
         Player player = ForgeHooks.getCraftingPlayer();
@@ -89,7 +90,6 @@ public class TicToolBase extends ModifiableItem {
         if (tool.isBroken()) {
             // Don't do that!
             player.hurt(DamageSource.GENERIC, 0.5f);
-
             Chat.sendMessage(player, Chat.WARNING);
         }
 
@@ -98,7 +98,7 @@ public class TicToolBase extends ModifiableItem {
     }
 
     @Override
-    public boolean hasContainerItem(@Nonnull ItemStack stack) {
+    public boolean hasCraftingRemainingItem(@Nonnull ItemStack stack) {
         return true;
     }
 

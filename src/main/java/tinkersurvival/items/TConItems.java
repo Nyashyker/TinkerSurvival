@@ -2,6 +2,8 @@ package tinkersurvival.items;
 
 import net.minecraft.world.item.Item;
 
+import net.minecraftforge.registries.RegisterEvent;
+
 import slimeknights.mantle.registration.object.ItemObject;
 
 import slimeknights.tconstruct.common.registration.CastItemObject;
@@ -37,5 +39,7 @@ public final class TConItems extends TinkerSurvivalModule {
         new Item.Properties().tab(TinkerToolParts.TAB_TOOL_PARTS),
         HeadMaterialStats.ID
     ));
+
+    public static void init(RegisterEvent.RegisterHelper<Item> registry) {}
 
 }

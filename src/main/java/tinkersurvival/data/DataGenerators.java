@@ -3,17 +3,14 @@ package tinkersurvival.data;
 import net.minecraft.data.DataGenerator;
 
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 
 import slimeknights.tconstruct.library.client.data.material.GeneratorPartTextureJsonGenerator;
 import slimeknights.tconstruct.tools.data.sprite.TinkerMaterialSpriteProvider;
 
-import tinkersurvival.data.client.ModBlockStateProvider;
 import tinkersurvival.data.client.ModItemModelProvider;
-import tinkersurvival.data.loot.ModLootTables;
-import tinkersurvival.data.loot.GlobalLootModifier;
 import tinkersurvival.data.overrides.BlockTagsOverrideProvider;
 import tinkersurvival.data.recipes.ModRecipesProvider;
 import tinkersurvival.data.tcon.MaterialPartTextureGenerator;
@@ -37,24 +34,21 @@ public final class DataGenerators {
         String modpackOverrides = System.getenv("MOD_OVERRIDES");
         TinkerMaterialSpriteProvider materialSprites = new TinkerMaterialSpriteProvider();
 
-        gen.addProvider(new ModItemModelProvider(gen, existingFileHelper));
-        gen.addProvider(new ModBlockStateProvider(gen, existingFileHelper));
-        gen.addProvider(blockTags);
-        gen.addProvider(new ModItemTagsProvider(gen, blockTags, existingFileHelper));
-        gen.addProvider(new ModRecipesProvider(gen));
-        gen.addProvider(new ModLootTables(gen));
-        gen.addProvider(new GlobalLootModifier(gen));
-        gen.addProvider(new ToolsRecipeProvider(gen));
-        gen.addProvider(new StationSlotLayoutProvider(gen));
-        gen.addProvider(new GeneratorPartTextureJsonGenerator(gen, TinkerSurvival.MODID, sawPartSprites));
-        gen.addProvider(new ToolDefinitionDataProvider(gen));
+        gen.addProvider(true, new ModItemModelProvider(gen, existingFileHelper));
+        gen.addProvider(true, blockTags);
+        gen.addProvider(true, new ModItemTagsProvider(gen, blockTags, existingFileHelper));
+        gen.addProvider(true, new ModRecipesProvider(gen));
+        gen.addProvider(true, new ToolsRecipeProvider(gen));
+        gen.addProvider(true, new StationSlotLayoutProvider(gen));
+        gen.addProvider(true, new GeneratorPartTextureJsonGenerator(gen, TinkerSurvival.MODID, sawPartSprites));
+        gen.addProvider(true, new ToolDefinitionDataProvider(gen));
 
         if (event.includeClient()) {
-            gen.addProvider(new MaterialPartTextureGenerator(gen, existingFileHelper, sawPartSprites, materialSprites));
+            gen.addProvider(true, new MaterialPartTextureGenerator(gen, existingFileHelper, sawPartSprites, materialSprites));
         }
 
         if (modpackOverrides != null && modpackOverrides.contains("all")) {
-            gen.addProvider(new BlockTagsOverrideProvider(gen, event.getExistingFileHelper()));
+            gen.addProvider(true, new BlockTagsOverrideProvider(gen, event.getExistingFileHelper()));
         }
     }
 

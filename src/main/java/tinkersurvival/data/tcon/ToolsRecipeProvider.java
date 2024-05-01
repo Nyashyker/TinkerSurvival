@@ -8,8 +8,9 @@ import net.minecraft.data.recipes.RecipeProvider;
 
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
+import slimeknights.mantle.recipe.data.IRecipeHelper;
+
 import slimeknights.tconstruct.library.data.recipe.IMaterialRecipeHelper;
-import slimeknights.tconstruct.library.data.recipe.IRecipeHelper;
 import slimeknights.tconstruct.library.data.recipe.IToolRecipeHelper;
 
 import tinkersurvival.items.TConItems;

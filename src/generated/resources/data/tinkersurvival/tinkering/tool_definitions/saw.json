@@ -1,26 +1,33 @@
 {
-  "parts": [
+  "modules": [
     {
-      "item": "tinkersurvival:saw_blade"
+      "type": "tconstruct:part_stats",
+      "parts": [
+        "tinkersurvival:saw_blade",
+        "tconstruct:tool_handle",
+        "tconstruct:tool_binding"
+      ],
+      "stat_provider": "tconstruct:melee_harvest"
     },
     {
-      "item": "tconstruct:tool_handle"
+      "type": "tconstruct:base_stats",
+      "stats": {
+        "tconstruct:attack_damage": 0.0,
+        "tconstruct:attack_speed": 0.0
+      }
     },
     {
-      "item": "tconstruct:tool_binding"
+      "type": "tconstruct:multiply_stats",
+      "multipliers": {
+        "tconstruct:attack_damage": 0.0
+      }
+    },
+    {
+      "type": "tconstruct:modifier_slots",
+      "slots": {
+        "abilities": 1,
+        "upgrades": 3
+      }
     }
-  ],
-  "stats": {
-    "base": {
-      "tconstruct:attack_damage": 0.0,
-      "tconstruct:attack_speed": 0.0
-    },
-    "multipliers": {
-      "tconstruct:attack_damage": 0.0
-    }
-  },
-  "slots": {
-    "upgrades": 3,
-    "abilities": 1
-  }
+  ]
 }

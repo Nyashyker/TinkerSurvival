@@ -1,0 +1,11 @@
+// 1.19.2	2024-05-01T08:50:26.231102381	TinkerSurvival - Item Tags
+3d0e6ce690e2b44a3ec926bf8ecb98b8b83111c2 data/tconstruct/tags/items/casts/gold.json
+cb4344249ad34aa4ab9bf0b98c5d41e234714e2d data/tconstruct/tags/items/casts/red_sand.json
+42f301ce1ffa86b73efc8422e1f290049c2dd755 data/tconstruct/tags/items/casts/sand.json
+29efca900d1619134ea5955a95858cc629f28784 data/tconstruct/tags/items/modifiable/durability.json
+29efca900d1619134ea5955a95858cc629f28784 data/tconstruct/tags/items/modifiable/harvest/primary.json
+29efca900d1619134ea5955a95858cc629f28784 data/tconstruct/tags/items/modifiable/melee/weapon.json
+29efca900d1619134ea5955a95858cc629f28784 data/tconstruct/tags/items/modifiable/multipart.json
+00c3c7ab1ef55ab807c742dcd8c986fbe01ca4e9 data/tconstruct/tags/items/parts.json
+3d0e6ce690e2b44a3ec926bf8ecb98b8b83111c2 data/tinkersurvival/tags/items/casts/multi_use/saw_blade.json
+73089bbb7628c4aeeaa125c09b22b8ed890c3b3c data/tinkersurvival/tags/items/casts/single_use/saw_blade.json
