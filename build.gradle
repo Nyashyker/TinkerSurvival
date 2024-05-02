@@ -156,7 +156,8 @@ def replaceProperties = [ 'version': version,
     'issue_tracker': issue_tracker, 'license': license, 'modid': modid, 'display_name': display_name,
     'description': description, 'display_url': display_url, 'update_url': update_url, 'authors': authors,
     'credits': credits, 'logo_file': logo_file, 'minecraft_version_range': minecraft_version_range,
-    'forge_version_range': forge_version_range, "loader_version_range": loader_version_range
+    'forge_version_range': forge_version_range, "loader_version_range": loader_version_range,
+    'se_version': se_version
 ]
 
 processResources {
@@ -200,6 +201,7 @@ task curseforge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge) {
         }
         mainFile.addRequirement('mantle')
         mainFile.addRequirement('tinkers-construct')
+        mainFile.addRequirement('survivalist-essentials')
         mainFile.addOptional('configured')
         mainFile.addOptional('catalogue')
         mainFile.addOptional('fruit-trees')
@@ -237,6 +239,7 @@ modrinth {
         dependencies {
             required.project 'mantle'
             required.project 'tinkers-construct'
+            required.project 'survivalist-essentials'
             optional.project 'quark'
             optional.project 'allyoucaneat'
             optional.project 'botania'
@@ -279,3 +282,22 @@ task signJar(type: SignJar, dependsOn: jar) {
     outputFile = jar.archiveFile
 }
 
+publishing {
+    repositories {
+        maven {
+            name = 'GitHubPackages'
+            url = uri(maven_url)
+            credentials {
+                username = project.githubusername
+                password = project.githubtoken
+            }
+        }
+    }
+
+    publications {
+        gpr(MavenPublication) {
+            artifactId = modid
+            from(components.java)
+        }
+    }
+}
