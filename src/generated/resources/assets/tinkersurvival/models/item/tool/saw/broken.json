@@ -1,0 +1,28 @@
+{
+  "loader": "tconstruct:tool",
+  "parent": "forge:item/default-tool",
+  "textures": {
+    "handle": "tinkersurvival:item/tool/saw/handle",
+    "head": "tinkersurvival:item/tool/saw/head_broken",
+    "binding": "tinkersurvival:item/tool/saw/binding"
+  },
+  "large": false,
+  "modifier_roots": [
+    "tinkersurvival:item/tool/saw/modifiers/broken/",
+    "tinkersurvival:item/tool/saw/modifiers/"
+  ],
+  "parts": [
+    {
+      "name": "handle",
+      "index": 1
+    },
+    {
+      "name": "head",
+      "index": 0
+    },
+    {
+      "name": "binding",
+      "index": 2
+    }
+  ]
+}
