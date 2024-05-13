@@ -1,7 +1,12 @@
 {
   "parts": [
     {
-      "item": "tinkersurvival:saw_blade"
+      "type": "tconstruct:part_stats",
+      "parts": [
+        "tinkersurvival:saw_blade",
+        "tconstruct:tool_handle",
+        "tconstruct:tool_binding"
+      ]
     },
     {
       "item": "tconstruct:tool_handle"
