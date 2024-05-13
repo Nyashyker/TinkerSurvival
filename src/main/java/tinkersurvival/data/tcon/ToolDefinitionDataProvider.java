@@ -56,6 +56,7 @@ public class ToolDefinitionDataProvider extends AbstractToolDefinitionDataProvid
                 .part(TConItems.SAW_BLADE)
                 .part(TinkerToolParts.toolHandle)
                 .part(TinkerToolParts.toolBinding).build())
+            .module(defaultThreeParts)
             .module(new SetStatsModule(StatsNBT.builder()
                 .set(ToolStats.ATTACK_DAMAGE, 0.0f)
                 .set(ToolStats.ATTACK_SPEED, -8.0f).build()))

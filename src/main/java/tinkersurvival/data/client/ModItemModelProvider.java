@@ -6,10 +6,14 @@ import net.minecraft.core.Registry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 
+import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
+import slimeknights.mantle.registration.object.ItemObject;
+import slimeknights.tconstruct.common.data.model.MaterialModelBuilder;
 import slimeknights.tconstruct.common.registration.CastItemObject;
+import slimeknights.tconstruct.library.tools.part.MaterialItem;
 
 import tinkersurvival.items.TConItems;
 import tinkersurvival.TinkerSurvival;
@@ -42,7 +46,18 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         singleTexture(idGold.getPath(), loc, "layer0", textureLocationGold);
         singleTexture(idSand.getPath(), loc, "layer0", textureLocationSand);
-        singleTexture(idSandRed.getPath(), loc, "layer0", textureLocationSandRed);        
+        singleTexture(idSandRed.getPath(), loc, "layer0", textureLocationSandRed);
+        part(TConItems.SAW_BLADE, "saw/head").offset(-1, 1);
+    }
+
+    private MaterialModelBuilder<ItemModelBuilder> part(ResourceLocation part, String texture) {
+        return withExistingParent(part.getPath(), "forge:item/default")
+            .texture("texture", new ResourceLocation(TinkerSurvival.MODID, "item/tool/" + texture))
+            .customLoader(MaterialModelBuilder::new);
+    }
+
+    private MaterialModelBuilder<ItemModelBuilder> part(ItemObject<? extends MaterialItem> part, String texture) {
+        return part(part.getId(), texture);
     }
 
 }

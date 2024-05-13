@@ -26,12 +26,12 @@ public final class TConItems extends TinkerSurvivalModule {
     );
 
     public static final ItemObject<ModifiableItem> KNIFE = ITEM_TCON_REGISTRY.register("knife", () -> new Knife(
-        (new Item.Properties()).stacksTo(1).tab(TinkerTools.TAB_TOOLS).setNoRepair(),
+        (new Item.Properties()).stacksTo(1).tab(TinkerTools.TAB_TOOLS),
         ToolDefinitions.KNIFE_DEFINITION
     ));
 
     public static final ItemObject<ModifiableItem> SAW = ITEM_TCON_REGISTRY.register("saw", () -> new Saw(
-        (new Item.Properties()).stacksTo(1).tab(TinkerTools.TAB_TOOLS).setNoRepair(),
+        (new Item.Properties()).stacksTo(1).tab(TinkerTools.TAB_TOOLS),
         ToolDefinitions.SAW_DEFINITION
     ));
 

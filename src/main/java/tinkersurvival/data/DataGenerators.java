@@ -14,6 +14,7 @@ import tinkersurvival.data.client.ModItemModelProvider;
 import tinkersurvival.data.overrides.BlockTagsOverrideProvider;
 import tinkersurvival.data.recipes.ModRecipesProvider;
 import tinkersurvival.data.tcon.MaterialPartTextureGenerator;
+import tinkersurvival.data.tcon.ToolItemModelProvider;
 import tinkersurvival.data.tcon.sprite.SawPartSpriteProvider;
 import tinkersurvival.data.tcon.StationSlotLayoutProvider;
 import tinkersurvival.data.tcon.ToolDefinitionDataProvider;
@@ -45,6 +46,7 @@ public final class DataGenerators {
         gen.addProvider(client, new GeneratorPartTextureJsonGenerator(gen, TinkerSurvival.MODID, sawPartSprites));
         gen.addProvider(server, new ToolDefinitionDataProvider(gen));
         gen.addProvider(client, new MaterialPartTextureGenerator(gen, existingFileHelper, sawPartSprites, materialSprites));
+        gen.addProvider(client, new ToolItemModelProvider(gen, existingFileHelper));
 
         if (modpackOverrides != null && modpackOverrides.contains("all")) {
             gen.addProvider(server, new BlockTagsOverrideProvider(gen, event.getExistingFileHelper()));
