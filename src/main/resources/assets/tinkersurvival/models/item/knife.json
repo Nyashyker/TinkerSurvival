@@ -4,14 +4,23 @@
   "textures": {
     "handle": "tinkersurvival:item/tool/knife/handle",
     "head": "tinkersurvival:item/tool/knife/head",
-    "binding": "tinkersurvival:item/tool/knife/binding",
-    "broken_head": "tinkersurvival:item/tool/knife/broken_head"
+    "binding": "tinkersurvival:item/tool/knife/binding"
   },
   "large": false,
   "modifier_roots": [ "tinkersurvival:item/tool/knife/modifiers/" ],
   "parts": [
     { "name": "handle",  "index": 1 },
-    { "name": "head",    "index": 0, "broken": "broken_head" },
+    { "name": "head",    "index": 0 },
     { "name": "binding", "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:charging": 2 },
+      "model": "tinkersurvival:item/tool/knife/blocking"
+    },
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersurvival:item/tool/knife/broken"
+    }
   ]
 }

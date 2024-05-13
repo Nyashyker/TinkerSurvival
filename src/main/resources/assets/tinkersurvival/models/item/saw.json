@@ -4,14 +4,23 @@
   "textures": {
     "handle": "tinkersurvival:item/tool/saw/handle",
     "head": "tinkersurvival:item/tool/saw/head",
-    "binding": "tinkersurvival:item/tool/saw/binding",
-    "broken_head": "tinkersurvival:item/tool/saw/broken_head"
+    "binding": "tinkersurvival:item/tool/saw/binding"
   },
   "large": false,
   "modifier_roots": [ "tinkersurvival:item/tool/saw/modifiers/" ],
   "parts": [
     { "name": "handle",  "index": 1 },
-    { "name": "head",    "index": 0, "broken": "broken_head" },
+    { "name": "head",    "index": 0 },
     { "name": "binding", "index": 2 }
+  ],
+  "overrides": [
+    {
+      "predicate": { "tconstruct:charging": 2 },
+      "model": "tinkersurvival:item/tool/saw/blocking"
+    },
+    {
+      "predicate": { "tconstruct:broken": 1 },
+      "model": "tinkersurvival:item/tool/saw/broken"
+    }
   ]
 }
