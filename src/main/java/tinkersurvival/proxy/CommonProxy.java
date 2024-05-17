@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegisterEvent;
 
 import tinkersurvival.common.TinkerSurvivalModule;
 import tinkersurvival.items.TConItems;
+import tinkersurvival.items.TinkerSurvivalItems;
 import tinkersurvival.TinkerSurvival;
 
 @Mod.EventBusSubscriber(modid = TinkerSurvival.MODID)
@@ -35,6 +36,7 @@ public class CommonProxy {
         @SubscribeEvent(priority = EventPriority.HIGHEST)
         public static void registerEvent(RegisterEvent event) {
             event.register(Registry.ITEM_REGISTRY, TConItems::init);
+            event.register(Registry.ITEM_REGISTRY, TinkerSurvivalItems::init);
         }
 
         @SubscribeEvent(priority = EventPriority.HIGHEST)
