@@ -1,0 +1,20 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:constantan#constantan\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.constantan.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:deepslate_iron_ore",
+      "text": "info.tinkersurvival.modpack_book.mining.constantan.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.constantan.name"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:constantan#constantan\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.constantan.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.constantan.materials.name"
+    }
+  ],
+  "sortnum": 11
+}

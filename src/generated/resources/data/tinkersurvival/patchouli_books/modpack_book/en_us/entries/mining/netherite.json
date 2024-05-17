@@ -1,0 +1,14 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:manyullyn#manyullyn\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.netherite.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:manyullyn#manyullyn\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.netherite.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.netherite.materials.name"
+    }
+  ],
+  "sortnum": 14
+}

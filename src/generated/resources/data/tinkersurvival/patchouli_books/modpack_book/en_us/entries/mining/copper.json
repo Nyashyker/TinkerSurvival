@@ -1,0 +1,20 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:copper#copper\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.copper.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:copper_ore",
+      "text": "info.tinkersurvival.modpack_book.mining.copper.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.copper.name"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:copper#copper\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.copper.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.copper.materials.name"
+    }
+  ],
+  "sortnum": 10
+}

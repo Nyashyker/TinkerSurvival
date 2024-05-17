@@ -1,0 +1,24 @@
+{
+  "category": "tinkersurvival:gameplay",
+  "icon": "minecraft:campfire",
+  "name": "info.tinkersurvival.modpack_book.gameplay.environment.name",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "homeostatic:textures/gui/book/normal_outside.png"
+      ],
+      "text": "info.tinkersurvival.modpack_book.gameplay.environment.intro",
+      "title": "info.tinkersurvival.modpack_book.gameplay.environment.title"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "info.tinkersurvival.modpack_book.gameplay.environment.overview"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "info.tinkersurvival.modpack_book.gameplay.environment.details"
+    }
+  ],
+  "sortnum": 2
+}

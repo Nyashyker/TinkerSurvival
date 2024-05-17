@@ -1,0 +1,20 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:rock#rock\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.stone.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:stone",
+      "text": "info.tinkersurvival.modpack_book.mining.stone.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.stone.name"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:rock#rock\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.stone.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.stone.materials.name"
+    }
+  ],
+  "sortnum": 9
+}

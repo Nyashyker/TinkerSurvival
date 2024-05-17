@@ -1,0 +1,38 @@
+{
+  "category": "tinkersurvival:health",
+  "icon": "survivalistessentials:cloth",
+  "name": "info.tinkersurvival.modpack_book.health.ingredients.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivalistessentials:cloth",
+      "text": "info.tinkersurvival.modpack_book.health.ingredients.desc",
+      "title": "info.tinkersurvival.modpack_book.health.ingredients.subtitle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivalistessentials:cloth",
+      "text": "info.tinkersurvival.modpack_book.health.ingredients.cloth.desc",
+      "title": "item.survivalistessentials.cloth"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivalistessentials:mortar_and_pestle",
+      "text": "info.tinkersurvival.modpack_book.health.ingredients.mortar_and_pestle.desc",
+      "title": "item.survivalistessentials.mortar_and_pestle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivalistessentials:plant_paste",
+      "text": "info.tinkersurvival.modpack_book.health.ingredients.plant_paste.desc",
+      "title": "item.survivalistessentials.plant_paste"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivalistessentials:ointment",
+      "text": "info.tinkersurvival.modpack_book.health.ingredients.ointment.desc",
+      "title": "item.survivalistessentials.ointment"
+    }
+  ],
+  "sortnum": 15
+}

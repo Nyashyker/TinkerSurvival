@@ -1,0 +1,38 @@
+{
+  "category": "tinkersurvival:gameplay",
+  "icon": "survivalistessentials:rock_stone",
+  "name": "info.tinkersurvival.modpack_book.gameplay.materials.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivalistessentials:stone_loose_rock",
+      "text": "info.tinkersurvival.modpack_book.gameplay.materials.gather_stones.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.materials.gather_stones.title"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:oak_leaves",
+      "text": "info.tinkersurvival.modpack_book.gameplay.materials.gather_sticks.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.materials.gather_sticks.title"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivalistessentials:flint_shard",
+      "text": "info.tinkersurvival.modpack_book.gameplay.materials.flint_shards.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.materials.flint_shards.title"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "survivalistessentials:plant_fiber",
+      "text": "info.tinkersurvival.modpack_book.gameplay.materials.plant_fiber.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.materials.plant_fiber.title"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "survivalistessentials:plant_string",
+      "text": "info.tinkersurvival.modpack_book.gameplay.materials.plant_string.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.materials.plant_string.title"
+    }
+  ],
+  "sortnum": 1
+}

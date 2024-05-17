@@ -1,0 +1,32 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:steel#steel\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.steel.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:cobalt_ore",
+      "text": "info.tinkersurvival.modpack_book.mining.steel.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.steel.name"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:steel#steel\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.steel.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.steel.materials.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "immersiveengineering:crafting/manual",
+      "text": "info.tinkersurvival.modpack_book.mining.steel.iesteel.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.steel.iesteel.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "botania:lexicon",
+      "text": "info.tinkersurvival.modpack_book.mining.steel.manasteel.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.steel.manasteel.name"
+    }
+  ],
+  "sortnum": 13
+}

@@ -1,0 +1,10 @@
+{
+  "dont_generate_book": false,
+  "i18n": true,
+  "landing_text": "info.tinkersurvival.modpack_book.intro",
+  "model": "tinkersurvival:modpack_book",
+  "name": "item.tinkersurvival.modpack_book",
+  "show_progress": false,
+  "subtitle": "info.tinkersurvival.modpack_book.subtitle",
+  "use_blocky_font": true
+}

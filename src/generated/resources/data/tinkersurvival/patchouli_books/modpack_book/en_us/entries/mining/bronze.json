@@ -1,0 +1,20 @@
+{
+  "category": "tinkersurvival:mining",
+  "icon": "tconstruct:pick_head{\"Material\":\"tconstruct:bronze#bronze\"}",
+  "name": "info.tinkersurvival.modpack_book.mining.bronze.name",
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:diamond_ore",
+      "text": "info.tinkersurvival.modpack_book.mining.bronze.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.bronze.name"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "tconstruct:pick_head{\"Material\":\"tconstruct:bronze#bronze\"}",
+      "text": "info.tinkersurvival.modpack_book.mining.bronze.materials.desc",
+      "title": "info.tinkersurvival.modpack_book.mining.bronze.materials.name"
+    }
+  ],
+  "sortnum": 12
+}

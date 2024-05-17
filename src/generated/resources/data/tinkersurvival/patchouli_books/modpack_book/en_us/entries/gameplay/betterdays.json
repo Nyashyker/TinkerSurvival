@@ -1,0 +1,22 @@
+{
+  "category": "tinkersurvival:gameplay",
+  "icon": "minecraft:clock",
+  "name": "info.tinkersurvival.modpack_book.gameplay.betterdays.name",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tinkersurvival:textures/gui/book/minecraft___first_night_by_sasoriryu_d68a3za.png"
+      ],
+      "text": "info.tinkersurvival.modpack_book.gameplay.betterdays.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.betterdays.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "comforts:sleeping_bag_green",
+      "text": "info.tinkersurvival.modpack_book.gameplay.betterdays.comforts.desc",
+      "title": "info.tinkersurvival.modpack_book.gameplay.betterdays.comforts.name"
+    }
+  ],
+  "sortnum": 5
+}

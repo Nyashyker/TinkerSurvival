@@ -1,0 +1,20 @@
+{
+  "category": "tinkersurvival:about",
+  "icon": "tconstruct:tinker_station",
+  "name": "info.tinkersurvival.modpack_book.about.welcome.title",
+  "pages": [
+    {
+      "type": "patchouli:image",
+      "images": [
+        "tinkersurvival:textures/gui/book/logo.png"
+      ],
+      "text": "info.tinkersurvival.modpack_book.about.welcome.desc",
+      "title": "info.tinkersurvival.modpack_book.about.welcome.title"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "info.tinkersurvival.modpack_book.about.welcome.credits"
+    }
+  ],
+  "sortnum": 0
+}

@@ -1,0 +1,26 @@
+{
+  "category": "tinkersurvival:food",
+  "icon": "minecraft:carrot",
+  "name": "info.tinkersurvival.modpack_book.food.overview.name",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "solcarrot:food_book",
+      "text": "info.tinkersurvival.modpack_book.food.overview.sol.desc",
+      "title": "info.tinkersurvival.modpack_book.food.overview.sol.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "sushigocrafting:book",
+      "text": "info.tinkersurvival.modpack_book.food.overview.sushi.desc",
+      "title": "info.tinkersurvival.modpack_book.food.overview.sushi.name"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "culinaryconstruct:culinary_station",
+      "text": "info.tinkersurvival.modpack_book.food.overview.culinary.desc",
+      "title": "info.tinkersurvival.modpack_book.food.overview.culinary.name"
+    }
+  ],
+  "sortnum": 17
+}
