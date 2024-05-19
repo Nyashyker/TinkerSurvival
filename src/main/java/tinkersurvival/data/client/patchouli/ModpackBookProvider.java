@@ -3,10 +3,11 @@ package tinkersurvival.data.client.patchouli;
 import java.util.List;
 import java.util.function.Consumer;
 
+import chargedcharms.ChargedCharms;
+import chargedcharms.common.item.ChargedCharmsItems;
 import homeostatic.Homeostatic;
 import homeostatic.common.item.HomeostaticItems;
 
-import net.minecraft.core.Registry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -14,15 +15,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 import net.minecraft.world.level.block.Blocks;
-import slimeknights.mantle.registration.object.ItemObject;
+
 import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.materials.definition.MaterialVariant;
 import slimeknights.tconstruct.library.tools.item.IModifiableDisplay;
 import slimeknights.tconstruct.library.tools.nbt.MaterialNBT;
 import slimeknights.tconstruct.library.tools.nbt.ToolStack;
-import slimeknights.tconstruct.library.tools.part.IMaterialItem;
-import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.shared.TinkerCommons;
 import slimeknights.tconstruct.tables.TinkerTables;
 import slimeknights.tconstruct.tools.TinkerToolParts;
@@ -71,6 +70,7 @@ public class ModpackBookProvider extends PatchouliBookProvider {
         bookBuilder = addMiningProgression(bookBuilder).build();
         bookBuilder = addHealth(bookBuilder).build();
         bookBuilder = addFood(bookBuilder).build();
+        bookBuilder = addTips(bookBuilder).build();
 
         bookBuilder.build(consumer);
     }
@@ -169,27 +169,27 @@ public class ModpackBookProvider extends PatchouliBookProvider {
             .setAnchor("hypothermia")
             .setTitle(prefix("gameplay.body_temp.hypothermia.title"))
             .setText(prefix("gameplay.body_temp.hypothermia.intro")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("insulation"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("insulation"), gameplayBodyTempEntry))
             .setAnchor("insulation")
             .setTitle(prefix("gameplay.body_temp.insulation.title"))
             .setText(prefix("gameplay.body_temp.insulation.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("remove_insulation"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("remove_insulation"), gameplayBodyTempEntry))
             .setAnchor("remove_insulation")
             .setTitle(prefix("gameplay.body_temp.remove_insulation.title"))
             .setText(prefix("gameplay.body_temp.remove_insulation.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("radiation_protection"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("radiation_protection"), gameplayBodyTempEntry))
             .setAnchor("radiation_protection")
             .setTitle(prefix("gameplay.body_temp.radiation_protection.title"))
             .setText(prefix("gameplay.body_temp.radiation_protection.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("remove_radiation_protection"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("remove_radiation_protection"), gameplayBodyTempEntry))
             .setAnchor("remove_radiation_protection")
             .setTitle(prefix("gameplay.body_temp.remove_radiation_protection.title"))
             .setText(prefix("gameplay.body_temp.remove_radiation_protection.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("waterproof"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("waterproof"), gameplayBodyTempEntry))
             .setAnchor("waterproofing")
             .setTitle(prefix("gameplay.body_temp.waterproof.title"))
             .setText(prefix("gameplay.body_temp.waterproof.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("remove_waterproof"), gameplayBodyTempEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("remove_waterproof"), gameplayBodyTempEntry))
             .setAnchor("remove_waterproofing")
             .setTitle(prefix("gameplay.body_temp.remove_waterproof.title"))
             .setText(prefix("gameplay.body_temp.remove_waterproof.text")).build();
@@ -213,7 +213,7 @@ public class ModpackBookProvider extends PatchouliBookProvider {
         .addCraftingPage(hsLoc("water_filter"))
             .setTitle(prefix("gameplay.hydration.water_filter.title"))
             .setText(prefix("gameplay.hydration.water_filter.text")).build()
-        .addPage(new CustomRecipePageBuilder(hsLoc("filtered_water_flask"), gameplayHydrationEntry))
+        .addPage(addHomeostaticRecipe(hsLoc("filtered_water_flask"), gameplayHydrationEntry))
             .setTitle(prefix("gameplay.hydration.leather_flask_water_filter.title"))
             .setText(prefix("gameplay.hydration.leather_flask_water_filter.text")).build();
 
@@ -491,6 +491,52 @@ public class ModpackBookProvider extends PatchouliBookProvider {
         return category;
     }
 
+    private CategoryBuilder addTips(BookBuilder bookBuilder) {
+        CategoryBuilder category = bookBuilder.addCategory(
+            "tips",
+            prefix("tips.name"),
+            prefix("tips.desc"),
+            new ItemStack(Items.NETHER_STAR)
+        )
+        .setSortnum(getCategorySortNum());
+
+        EntryBuilder tipsCharms = category.addEntry(
+            "tips/charms",
+            "itemGroup.chargedcharms",
+            new ItemStack(ChargedCharmsItems.regenerationCharm)
+        )
+        .setSortnum(getEntrySortNum());
+
+        tipsCharms.addPage(addChargedCharmsRecipe(loc("regen"), tipsCharms))
+            .setTitle(prefix("tips.charms.regen.title"))
+            .setText(prefix("tips.charms.regen.text")).build()
+        .addPage(addChargedCharmsRecipe(loc("absorption"), tipsCharms))
+            .setTitle(prefix("tips.charms.absorption.title"))
+            .setText(prefix("tips.charms.absorption.text")).build()
+        .addCraftingPage(ccLoc("charged_glowup_charm"))
+            .setTitle(prefix("tips.charms.glowup.title"))
+            .setText(prefix("tips.charms.glowup.text")).build()
+        .addPage(addChargedCharmsRecipe(loc("speed"), tipsCharms))
+            .setTitle(prefix("tips.charms.speed.title"))
+            .setText(prefix("tips.charms.speed.text")).build()
+        .addPage(addChargedCharmsRecipe(loc("totem"), tipsCharms))
+            .setTitle(prefix("tips.charms.totem.title"))
+            .setText(prefix("tips.charms.totem.text")).build()
+        .addPage(addChargedCharmsRecipe(loc("enchanted_totem"), tipsCharms))
+            .setTitle(prefix("tips.charms.enchanted_totem.title"))
+            .setText(prefix("tips.charms.enchanted_totem.text")).build();
+
+        return category;
+    }
+
+    private CustomRecipePageBuilder addHomeostaticRecipe(ResourceLocation recipe, EntryBuilder parent) {
+        return new CustomRecipePageBuilder(Homeostatic.MODID + ":custom_crafting", recipe, parent);
+    }
+
+    private CustomRecipePageBuilder addChargedCharmsRecipe(ResourceLocation recipe, EntryBuilder parent) {
+        return new CustomRecipePageBuilder(TinkerSurvival.MODID + ":chargedcharms", recipe, parent);
+    }
+
     private int getCategorySortNum() {
         return ++categorySortNum;
     }
@@ -529,6 +575,10 @@ public class ModpackBookProvider extends PatchouliBookProvider {
 
     private ResourceLocation comfortsLoc(String path) {
         return new ResourceLocation("comforts", path);
+    }
+
+    private ResourceLocation ccLoc(String path) {
+        return new ResourceLocation(ChargedCharms.MODID, path);
     }
 
     private String prefix(String name) {
