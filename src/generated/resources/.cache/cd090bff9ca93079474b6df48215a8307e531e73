@@ -1,10 +1,11 @@
-// 1.19.2	2024-05-16T19:44:56.612738504	Patchouli Book Provider
+// 1.19.2	2024-05-18T16:57:59.408217307	Patchouli Book Provider
 d396c048eb68d2b72a5bd61d10cd8fdfc836bf25 data/tinkersurvival/patchouli_books/modpack_book/book.json
 f1d7762e6b737976874510ce500318b42be0cb5a data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/about.json
 683469b5442acdf12236166a6bd95243f9e3695a data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/food.json
 f5648314300bf2d9af955682b4838639a3a437e4 data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/gameplay.json
 66622f6e82dc5187c5ac33b5c78afd1ebb83f788 data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/health.json
 f7270e9a2f71fea1d6140363328b44fc01697791 data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/mining.json
+ede6fd2b913f3a2da6f08fd00580a92b46e70317 data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/tips.json
 3c01af486afefa7969d9069b9b2988fdfe8dd30b data/tinkersurvival/patchouli_books/modpack_book/en_us/categories/tools.json
 a4fa5745bac09416044d53b2118434ca9ca94a71 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/about/welcome.json
 7c6ef9815a033ca0184e4288e604e38c488cc678 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/food/overview.json
@@ -22,5 +23,6 @@ a297c979c352a7b3b070f7eecce99aac46af0e91 data/tinkersurvival/patchouli_books/mod
 32468cf1e5ee28bfcc51c55287d8e9dd1e58255d data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/mining/progression.json
 a045c14f88a62fffba3dbc61788f0cd607e86621 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/mining/steel.json
 5b032a7956ff5a03c471a777d222c2df26be432b data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/mining/stone.json
+fba5f12e061358f77920b382501e8e4b6cbcfe71 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/tips/charms.json
 3b8fde642e85a01910b9c53bcbd7d41888848e13 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/tools/crude_tools.json
 f819a3fae185c7c0893ec42d06d4fe6c80ed9d83 data/tinkersurvival/patchouli_books/modpack_book/en_us/entries/tools/tcon_tools.json

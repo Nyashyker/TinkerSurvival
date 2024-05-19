@@ -1,0 +1,44 @@
+{
+  "category": "tinkersurvival:tips",
+  "icon": "chargedcharms:charged_regeneration_charm{\"Damage\":0}",
+  "name": "itemGroup.chargedcharms",
+  "pages": [
+    {
+      "type": "tinkersurvival:chargedcharms",
+      "recipe": "tinkersurvival:regen",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.regen.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.regen.title"
+    },
+    {
+      "type": "tinkersurvival:chargedcharms",
+      "recipe": "tinkersurvival:absorption",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.absorption.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.absorption.title"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "chargedcharms:charged_glowup_charm",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.glowup.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.glowup.title"
+    },
+    {
+      "type": "tinkersurvival:chargedcharms",
+      "recipe": "tinkersurvival:speed",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.speed.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.speed.title"
+    },
+    {
+      "type": "tinkersurvival:chargedcharms",
+      "recipe": "tinkersurvival:totem",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.totem.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.totem.title"
+    },
+    {
+      "type": "tinkersurvival:chargedcharms",
+      "recipe": "tinkersurvival:enchanted_totem",
+      "text": "info.tinkersurvival.modpack_book.tips.charms.enchanted_totem.text",
+      "title": "info.tinkersurvival.modpack_book.tips.charms.enchanted_totem.title"
+    }
+  ],
+  "sortnum": 18
+}
