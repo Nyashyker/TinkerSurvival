@@ -147,5 +147,19 @@
     "info.tinkersurvival.modpack_book.food.overview.sushi.name": "Sushi Go Crafting",
     "info.tinkersurvival.modpack_book.food.overview.sushi.desc": "Sushi! One excellent way to give yourself a better variety of high tier foods is Sushi Go Crafting. Grab a copy of the manual and good luck!",
     "info.tinkersurvival.modpack_book.food.overview.culinary.name": "Culinary Construct",
-    "info.tinkersurvival.modpack_book.food.overview.culinary.desc": "Culinary Construct is a mod that lets you make custom sandwiches or bowls/stews out of any food items you have lying around.$(br2)Although sandwiches do not count as unique foods, they are a cheap way to get good quality foods."
+    "info.tinkersurvival.modpack_book.food.overview.culinary.desc": "Culinary Construct is a mod that lets you make custom sandwiches or bowls/stews out of any food items you have lying around.$(br2)Although sandwiches do not count as unique foods, they are a cheap way to get good quality foods.",
+    "info.tinkersurvival.modpack_book.tips.name": "Tips & Tricks",
+    "info.tinkersurvival.modpack_book.tips.desc": "Here are a few items, tips and tricks that you may not be familiar with, but are super useful for surviving this harsh world.",
+    "info.tinkersurvival.modpack_book.tips.charms.regen.title": "Regeneration Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.regen.text": "$(li)Equipped in Curios \"Charm\" slot.$(li)Charged with any edible item that doesn't have negative effects.$(li)When player health is below 35 percent health, will use a charge to apply a heal effect.",
+    "info.tinkersurvival.modpack_book.tips.charms.absorption.title": "Absorption Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.absorption.text": "$(li)Equipped in Curios \"Charm\" slot.$(li)Charged with any edible item, without negative effects, that has nutrition > 4 (More complex or cooked foods)$(li)When player takes damage from most sources, will use a charge to apply 2 hearts of absorption$(li)Has a 20 second cooldown",
+    "info.tinkersurvival.modpack_book.tips.charms.glowup.title": "Glow Up Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.glowup.text": "$(li)Equipped in Curios \"Charm\" slot.$(li)Charged while in sunlight$(li)Gives mobs a “Glow up” (glowing effect) after mob is hit for 30 seconds",
+    "info.tinkersurvival.modpack_book.tips.charms.speed.title": "Speed Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.speed.text": "$(li)Equipped in Curios \"Charm\" slot.$(li)Charged with sugar$(li)When player jumps while sprinting, Speed effect is triggered for 180 seconds (3 minutes)$(li)Has 120 second cooldown (2 minutes)",
+    "info.tinkersurvival.modpack_book.tips.charms.totem.title": "Totem Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.totem.text": "$(li)Equipped in Curios \"Charm\" slot.$(li)Charged with Totem of Undying$(li)Will use a totem when player dies",
+    "info.tinkersurvival.modpack_book.tips.charms.enchanted_totem.title": "Enchanted Totem Charm",
+    "info.tinkersurvival.modpack_book.tips.charms.enchanted_totem.text": "$(li)Charged with Biome Makeover Enchanted Totem of Undying$(li)Will use a totem when player dies"
 }
