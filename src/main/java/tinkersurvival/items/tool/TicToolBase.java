@@ -39,6 +39,10 @@ public class TicToolBase extends ModifiableItem {
             return ItemStack.EMPTY;
         }
 
+        if (container.getTag().getBoolean("remove")) {
+            return ItemStack.EMPTY;
+        }
+
         Inventory inventory = player.getInventory();
 
         /*
@@ -64,9 +68,10 @@ public class TicToolBase extends ModifiableItem {
          * always result in duplication bugs for mods that deal with vanilla
          * crafting inventory correctly.
          *
-         * Implementation was accidentally fixed with this commit:
+         * Implementation was accidentally fixed with this commit (in 1.18.2):
          * https://github.com/SlimeKnights/TinkersConstruct/commit/88a2b35fcb5e9493b5565296d2fbaf89cd6b6ddd
          *
+         * Broken again in 1.19.2
          */
 
         if (inventory.contains(container)) {
