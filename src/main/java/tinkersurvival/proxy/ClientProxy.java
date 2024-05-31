@@ -32,7 +32,7 @@ public final class ClientProxy extends CommonProxy {
     }
 
     public void clientSetup(final FMLClientSetupEvent event) {
-        if (ModList.get().isLoaded("patchouli")) {
+        if (ModList.get().isLoaded("chargedcharms")) {
             ChargedCharmsCustomCrafting.init();
         }
     }
