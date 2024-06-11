@@ -8,6 +8,7 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import slimeknights.tconstruct.tables.block.entity.inventory.TinkerStationContainerWrapper;
 import tinkersurvival.items.tool.Knife;
 import tinkersurvival.items.tool.Saw;
 import tinkersurvival.TinkerSurvival;
@@ -39,17 +40,24 @@ public class PlayerEventHandler {
             if (thing instanceof Saw || thing instanceof Knife) {
                 Container craftMatrix = event.getInventory();
 
-                for (int i = 0; i < craftMatrix.getContainerSize(); ++i) {
-                    ItemStack stack = craftMatrix.getItem(i);
+                /*
+                 * TinkerStationContainerWrapper removes the item from the inventory, which is correct, just this
+                 * needs to be ignored for the crafting station, but applied for other crafting inventories because
+                 * of the bug with how repair kit recipes work.
+                 */
+                if (!(craftMatrix instanceof TinkerStationContainerWrapper)) {
+                    for (int i = 0; i < craftMatrix.getContainerSize(); ++i) {
+                        ItemStack stack = craftMatrix.getItem(i);
 
-                    if (stack.getItem() instanceof Saw || stack.getItem() instanceof Knife) {
-                        ItemStack tool = craftMatrix.removeItemNoUpdate(i);
+                        if (stack.getItem() instanceof Saw || stack.getItem() instanceof Knife) {
+                            ItemStack tool = craftMatrix.removeItemNoUpdate(i);
 
-                        tool.getOrCreateTag().putBoolean("remove", true);
+                            tool.getOrCreateTag().putBoolean("remove", true);
 
-                        craftMatrix.setItem(i, tool);
+                            craftMatrix.setItem(i, tool);
+                        }
                     }
-                }
+                    }
             }
         }
     }
