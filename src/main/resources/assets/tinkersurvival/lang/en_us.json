@@ -91,7 +91,7 @@
     "info.tinkersurvival.modpack_book.mining.constantan.name": "Constantan Harvest Tier",
     "info.tinkersurvival.modpack_book.mining.constantan.desc": "$(li)Deepslate Lapis$(li)Deeplslate Iron$(li)Silver$(li2)-48 -> 104$(li)Deepslate Lead$(li)Nether Quartz$(li2)3 -> 135",
     "info.tinkersurvival.modpack_book.mining.constantan.materials.name": "Constantan Materials",
-    "info.tinkersurvival.modpack_book.mining.constantan.materials.desc": "Constantan is the first Harvest Tier that you'll need to use alloys. You'll need the Smeltery described in the Mighty Smelting book.$(br)$(li)Plated Slimewood$(li)Constantan (Copper + Nickel)$(li)Rose Gold (3 Copper + Gold)$(li)Pig Iron (Iron + Blood + Clay)$(li)Nahuatl$(li)Slimesteel (Iron + Skyslime + Seared Brick)$(li)Uranium$(li)Blood Bone$(li)Emerald or Diamond Upgrade Modifier",
+    "info.tinkersurvival.modpack_book.mining.constantan.materials.desc": "Constantan is the first Harvest Tier that you'll need to use alloys. You'll need the Smeltery described in the Mighty Smelting book.$(br)$(li)Plated Slimewood$(li)Constantan (Copper + Nickel)$(li)Rose Gold (3 Copper + Gold)$(li)Pig Iron (Iron + Blood + Honey)$(li)Nahuatl$(li)Slimesteel (Iron + Skyslime + Seared Brick)$(li)Uranium$(li)Blood Bone$(li)Emerald or Diamond Upgrade Modifier",
     "info.tinkersurvival.modpack_book.mining.bronze.name": "Bronze Harvest Tier",
     "info.tinkersurvival.modpack_book.mining.bronze.desc": "$(li)Uranium$(li2)-64 -> -16$(li)Gold$(li2)-64 -> 30$(li)Diamond$(li2)-64 -> -2$(li)Emerald$(li2)-16 -> 255$(li)Redstone$(li2)-64 -> 18$(li)Deepslate Silver$(li)Living Rock$(li)Deepslate Bauxite$(li)Nether Gold$(li2)8 -> 124$(li)Obsidian",
     "info.tinkersurvival.modpack_book.mining.bronze.materials.name": "Bronze Materials",
